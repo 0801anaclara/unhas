@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Sua Manicure - Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Studio de Unhas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#agendamento">Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Unhas perfeitas para destacar sua beleza.</h2>
+            <p>Agende seu horário com a melhor profissional da região.</p>
+            <a href="#agendamento" class="btn">Agendar Agora</a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h3>Nossos Serviços</h3>
+            <div class="lista-servicos">
+                <div class="servico-item">Mão Simples - R$ 40</div>
+                <div class="servico-item">Pé e Mão - R$ 70</div>
+                <div class="servico-item">Unhas em Gel - R$ 120</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="agendamento">
+        <div class="container">
+            <h3>Agende seu Horário</h3>
+            <form action="https://wa.me" method="get" target="_blank">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <select name="servico">
+                    <option value="mao">Mão Simples</option>
+                    <option value="peemao">Pé e Mão</option>
+                    <option value="gel">Unhas em Gel</option>
+                </select>
+                <button type="submit" class="btn">Enviar no WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Studio de Unhas - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
