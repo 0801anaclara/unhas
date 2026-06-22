@@ -1,0 +1,124 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+background:#850000;
+color:white;
+}
+
+/* Banner */
+header{
+height:400px;
+background:linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+url("https://images.unsplash.com/photo-1610992015732-2449b76344bc");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.banner{
+text-align:center;
+}
+
+.banner h1{
+font-size:4rem;
+color:#fff;
+}
+
+.banner p{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+/* Seções */
+section{
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#FFD700;
+}
+
+/* Sobre */
+.sobre{
+text-align:center;
+line-height:1.8;
+}
+
+/* Serviços */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#5c0000;
+border:2px solid #d4af37;
+border-radius:15px;
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card span{
+color:#FFD700;
+font-size:1.5rem;
+font-weight:bold;
+}
+
+/* Localização */
+.localizacao{
+text-align:center;
+background:#6d0000;
+}
+
+/* Contato */
+.contato{
+text-align:center;
+}
+
+.contato a{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:15px 35px;
+border-radius:50px;
+font-weight:bold;
+}
+
+/* Animal Print */
+body::before{
+content:"";
+display:block;
+height:15px;
+background:
+repeating-linear-gradient(
+45deg,
+#d4af37,
+#d4af37 10px,
+#000 10px,
+#000 20px
+);
+}
